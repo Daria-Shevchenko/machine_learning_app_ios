@@ -1,0 +1,403 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		8DE9C8E624167D5B00FAADAB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DE9C8E524167D5B00FAADAB /* AppDelegate.swift */; };
+		8DE9C8E824167D5B00FAADAB /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DE9C8E724167D5B00FAADAB /* SceneDelegate.swift */; };
+		8DE9C8EA24167D5B00FAADAB /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DE9C8E924167D5B00FAADAB /* ContentView.swift */; };
+		8DE9C8EC24167D5C00FAADAB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8DE9C8EB24167D5C00FAADAB /* Assets.xcassets */; };
+		8DE9C8EF24167D5C00FAADAB /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8DE9C8EE24167D5C00FAADAB /* Preview Assets.xcassets */; };
+		8DE9C8F224167D5C00FAADAB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8DE9C8F024167D5C00FAADAB /* LaunchScreen.storyboard */; };
+		8DE9C8FA24167D7100FAADAB /* gpt2.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 8DE9C8F924167D7100FAADAB /* gpt2.mlmodel */; };
+		8DE9C8FC24167F3E00FAADAB /* GPT2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DE9C8FB24167F3E00FAADAB /* GPT2.swift */; };
+		8DE9C9092416802700FAADAB /* GPT2ByteEncoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DE9C9002416802700FAADAB /* GPT2ByteEncoder.swift */; };
+		8DE9C90B2416802700FAADAB /* BertTokenizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DE9C9022416802700FAADAB /* BertTokenizer.swift */; };
+		8DE9C90C2416802700FAADAB /* SquadDataset.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DE9C9032416802700FAADAB /* SquadDataset.swift */; };
+		8DE9C90D2416802700FAADAB /* MLMultiArray+Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DE9C9042416802700FAADAB /* MLMultiArray+Utils.swift */; };
+		8DE9C90F2416802700FAADAB /* Math.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DE9C9062416802700FAADAB /* Math.swift */; };
+		8DE9C9102416802700FAADAB /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DE9C9072416802700FAADAB /* Utils.swift */; };
+		8DE9C9112416802700FAADAB /* GPT2Tokenizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DE9C9082416802700FAADAB /* GPT2Tokenizer.swift */; };
+		8DE9C913241680EC00FAADAB /* distilgpt2-64-6.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 8DE9C912241680EC00FAADAB /* distilgpt2-64-6.mlmodel */; };
+		8DE9C9152416829D00FAADAB /* gpt2-merges.txt in Resources */ = {isa = PBXBuildFile; fileRef = 8DE9C9142416829D00FAADAB /* gpt2-merges.txt */; };
+		8DE9C917241682E400FAADAB /* gpt2-vocab.json in Resources */ = {isa = PBXBuildFile; fileRef = 8DE9C916241682E400FAADAB /* gpt2-vocab.json */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		8DE9C8E224167D5B00FAADAB /* GT2Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GT2Demo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8DE9C8E524167D5B00FAADAB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		8DE9C8E724167D5B00FAADAB /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		8DE9C8E924167D5B00FAADAB /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		8DE9C8EB24167D5C00FAADAB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		8DE9C8EE24167D5C00FAADAB /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		8DE9C8F124167D5C00FAADAB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		8DE9C8F324167D5C00FAADAB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8DE9C8F924167D7100FAADAB /* gpt2.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = gpt2.mlmodel; sourceTree = "<group>"; };
+		8DE9C8FB24167F3E00FAADAB /* GPT2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GPT2.swift; sourceTree = "<group>"; };
+		8DE9C9002416802700FAADAB /* GPT2ByteEncoder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GPT2ByteEncoder.swift; sourceTree = "<group>"; };
+		8DE9C9022416802700FAADAB /* BertTokenizer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BertTokenizer.swift; sourceTree = "<group>"; };
+		8DE9C9032416802700FAADAB /* SquadDataset.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SquadDataset.swift; sourceTree = "<group>"; };
+		8DE9C9042416802700FAADAB /* MLMultiArray+Utils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "MLMultiArray+Utils.swift"; sourceTree = "<group>"; };
+		8DE9C9062416802700FAADAB /* Math.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Math.swift; sourceTree = "<group>"; };
+		8DE9C9072416802700FAADAB /* Utils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
+		8DE9C9082416802700FAADAB /* GPT2Tokenizer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GPT2Tokenizer.swift; sourceTree = "<group>"; };
+		8DE9C912241680EC00FAADAB /* distilgpt2-64-6.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = "distilgpt2-64-6.mlmodel"; sourceTree = "<group>"; };
+		8DE9C9142416829D00FAADAB /* gpt2-merges.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = "gpt2-merges.txt"; sourceTree = "<group>"; };
+		8DE9C916241682E400FAADAB /* gpt2-vocab.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "gpt2-vocab.json"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8DE9C8DF24167D5B00FAADAB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		8DE9C8D924167D5B00FAADAB = {
+			isa = PBXGroup;
+			children = (
+				8DE9C8E424167D5B00FAADAB /* GT2Demo */,
+				8DE9C8E324167D5B00FAADAB /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		8DE9C8E324167D5B00FAADAB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8DE9C8E224167D5B00FAADAB /* GT2Demo.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8DE9C8E424167D5B00FAADAB /* GT2Demo */ = {
+			isa = PBXGroup;
+			children = (
+				8DE9C8FF2416801100FAADAB /* GPT2Code */,
+				8DE9C8E524167D5B00FAADAB /* AppDelegate.swift */,
+				8DE9C8E724167D5B00FAADAB /* SceneDelegate.swift */,
+				8DE9C8E924167D5B00FAADAB /* ContentView.swift */,
+				8DE9C912241680EC00FAADAB /* distilgpt2-64-6.mlmodel */,
+				8DE9C8F924167D7100FAADAB /* gpt2.mlmodel */,
+				8DE9C8EB24167D5C00FAADAB /* Assets.xcassets */,
+				8DE9C8F024167D5C00FAADAB /* LaunchScreen.storyboard */,
+				8DE9C8F324167D5C00FAADAB /* Info.plist */,
+				8DE9C8ED24167D5C00FAADAB /* Preview Content */,
+				8DE9C9142416829D00FAADAB /* gpt2-merges.txt */,
+				8DE9C916241682E400FAADAB /* gpt2-vocab.json */,
+			);
+			path = GT2Demo;
+			sourceTree = "<group>";
+		};
+		8DE9C8ED24167D5C00FAADAB /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				8DE9C8EE24167D5C00FAADAB /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		8DE9C8FF2416801100FAADAB /* GPT2Code */ = {
+			isa = PBXGroup;
+			children = (
+				8DE9C9022416802700FAADAB /* BertTokenizer.swift */,
+				8DE9C9002416802700FAADAB /* GPT2ByteEncoder.swift */,
+				8DE9C9082416802700FAADAB /* GPT2Tokenizer.swift */,
+				8DE9C9062416802700FAADAB /* Math.swift */,
+				8DE9C9042416802700FAADAB /* MLMultiArray+Utils.swift */,
+				8DE9C9032416802700FAADAB /* SquadDataset.swift */,
+				8DE9C9072416802700FAADAB /* Utils.swift */,
+				8DE9C8FB24167F3E00FAADAB /* GPT2.swift */,
+			);
+			path = GPT2Code;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8DE9C8E124167D5B00FAADAB /* GT2Demo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8DE9C8F624167D5C00FAADAB /* Build configuration list for PBXNativeTarget "GT2Demo" */;
+			buildPhases = (
+				8DE9C8DE24167D5B00FAADAB /* Sources */,
+				8DE9C8DF24167D5B00FAADAB /* Frameworks */,
+				8DE9C8E024167D5B00FAADAB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GT2Demo;
+			productName = GT2Demo;
+			productReference = 8DE9C8E224167D5B00FAADAB /* GT2Demo.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		8DE9C8DA24167D5B00FAADAB /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1130;
+				LastUpgradeCheck = 1130;
+				ORGANIZATIONNAME = "Mohammad Azam";
+				TargetAttributes = {
+					8DE9C8E124167D5B00FAADAB = {
+						CreatedOnToolsVersion = 11.3.1;
+					};
+				};
+			};
+			buildConfigurationList = 8DE9C8DD24167D5B00FAADAB /* Build configuration list for PBXProject "GT2Demo" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 8DE9C8D924167D5B00FAADAB;
+			productRefGroup = 8DE9C8E324167D5B00FAADAB /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8DE9C8E124167D5B00FAADAB /* GT2Demo */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8DE9C8E024167D5B00FAADAB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8DE9C8F224167D5C00FAADAB /* LaunchScreen.storyboard in Resources */,
+				8DE9C8EF24167D5C00FAADAB /* Preview Assets.xcassets in Resources */,
+				8DE9C9152416829D00FAADAB /* gpt2-merges.txt in Resources */,
+				8DE9C917241682E400FAADAB /* gpt2-vocab.json in Resources */,
+				8DE9C8EC24167D5C00FAADAB /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8DE9C8DE24167D5B00FAADAB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8DE9C90D2416802700FAADAB /* MLMultiArray+Utils.swift in Sources */,
+				8DE9C8E624167D5B00FAADAB /* AppDelegate.swift in Sources */,
+				8DE9C8FC24167F3E00FAADAB /* GPT2.swift in Sources */,
+				8DE9C8FA24167D7100FAADAB /* gpt2.mlmodel in Sources */,
+				8DE9C9102416802700FAADAB /* Utils.swift in Sources */,
+				8DE9C9092416802700FAADAB /* GPT2ByteEncoder.swift in Sources */,
+				8DE9C8E824167D5B00FAADAB /* SceneDelegate.swift in Sources */,
+				8DE9C9112416802700FAADAB /* GPT2Tokenizer.swift in Sources */,
+				8DE9C913241680EC00FAADAB /* distilgpt2-64-6.mlmodel in Sources */,
+				8DE9C8EA24167D5B00FAADAB /* ContentView.swift in Sources */,
+				8DE9C90B2416802700FAADAB /* BertTokenizer.swift in Sources */,
+				8DE9C90C2416802700FAADAB /* SquadDataset.swift in Sources */,
+				8DE9C90F2416802700FAADAB /* Math.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		8DE9C8F024167D5C00FAADAB /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8DE9C8F124167D5C00FAADAB /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		8DE9C8F424167D5C00FAADAB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		8DE9C8F524167D5C00FAADAB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		8DE9C8F724167D5C00FAADAB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"GT2Demo/Preview Content\"";
+				DEVELOPMENT_TEAM = B2Q8EGNCQA;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = GT2Demo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.azamsharp.GT2Demo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		8DE9C8F824167D5C00FAADAB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"GT2Demo/Preview Content\"";
+				DEVELOPMENT_TEAM = B2Q8EGNCQA;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = GT2Demo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.azamsharp.GT2Demo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		8DE9C8DD24167D5B00FAADAB /* Build configuration list for PBXProject "GT2Demo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8DE9C8F424167D5C00FAADAB /* Debug */,
+				8DE9C8F524167D5C00FAADAB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8DE9C8F624167D5C00FAADAB /* Build configuration list for PBXNativeTarget "GT2Demo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8DE9C8F724167D5C00FAADAB /* Debug */,
+				8DE9C8F824167D5C00FAADAB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 8DE9C8DA24167D5B00FAADAB /* Project object */;
+}
